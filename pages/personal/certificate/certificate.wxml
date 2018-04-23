@@ -1,0 +1,31 @@
+<!--pages/personal/certificate/certificate.wxml-->
+<view class="certificate-container">
+  <view class="certificate-bg">
+    <image src='/images/personal/certificate-bg.png' style="width:100%;height:100%"></image>
+  </view>
+  <view class="certificate-title">
+    <text>捐赠证书</text>
+  </view>
+  <view class="certificate-content">
+    <view style="margin-bottom:30rpx;">
+      <text>尊敬的<text class="certificate-upline">{{info.nickName}}</text>：</text>
+    </view>
+    <view class="certificate-content-text">
+      <text>截至<text class="certificate-upline">{{year}}</text>年<text class="certificate-upline">{{month}}</text>月<text class="certificate-upline">{{day}}</text>日，您在亲青筹公益众筹平台上捐赠<text class="certificate-upline">{{times}}</text>次，捐款<text class="certificate-upline">{{money}}</text>元。</text>
+    </view>
+  </view>
+  <view class="certificate-thanks">
+    <text>奉献微爱心，关爱青少年，每一笔捐赠都承载着希望与寄托！我们相信，涓涓细流一定能汇聚成爱的海洋。感谢您的支持和信任，公益路上请继续与我们携手同行！</text>
+  </view>
+  <view class="certificate-signature">
+    <view class="certificate-signature-bg">
+      <image src="/images/personal/chapter.png" style="width:100%;height:100%"></image>
+    </view>
+    <view>
+      <text>浙江省青少年发展基金会</text>
+    </view>
+    <view>
+      <text class="certificate-upline">{{year}}</text>年<text class="certificate-upline">{{month}}</text>月<text class="certificate-upline">{{day}}</text>日
+    </view>
+  </view>
+</view>

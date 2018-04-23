@@ -1,0 +1,18 @@
+<!--pages/personal/record/record.wxml-->
+<view class="record-container">
+  <scroll-view scroll-y bindscrolltolower="lower" scroll-top="{{scrollTop}}" style="height:{{scrollHeight}}px;">
+    <view wx:for="{{list}}" class="record-item" wx:key="index">
+      <view class="record-item-left">
+        <image src="{{item.imgUrl}}" style='width:100%;height:100%'></image>
+      </view>
+      <view class="record-item-right">
+        <text class="record-item-time">捐赠时间:{{item.time}}</text>
+        <text class="record-item-title">{{item.title}}</text>
+        <text class="record-item-donation">捐助<text style='color:#eb6353'>{{item.donation || 0}}</text>元</text>
+      </view>
+    </view>
+    <view class="nomore" hidden="{{hidden}}">
+      <text>没有更多</text>   
+    </view>
+  </scroll-view>
+</view>

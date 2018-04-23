@@ -1,0 +1,129 @@
+/* pages/stepdonate/stepdonate.wxss */
+page {
+  width: 100%;
+  height: 100%;
+  background-color: #efeff4;
+}
+.step-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+/* main */
+.step-main {
+  position: relative;
+  width: 100%;
+  height: 437rpx;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+.main-bg {
+  position: absolute;
+  left: 0;top:0;
+  width: 100%;
+  height: 100%;
+}
+.main-date {
+  width: 394rpx;
+	height: 70rpx;
+  margin: 25rpx 0 ;
+  /* padding: 0 22rpx; */
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+	background-color: #ffffff;
+	border-radius: 35rpx;
+	border: 1rpx solid #cccccc;
+  z-index: 2;
+}
+.main-date image {
+  display: block;
+}
+.main-arrow-left, .main-arrow-right{
+  width: 16rpx;
+  height: 26rpx;
+  padding: 0 22rpx;
+}
+.main-date-text {
+	font-family: PingFang-SC-Medium;
+	font-size: 28rpx;
+  line-height: 26rpx;
+	letter-spacing: 0rpx;
+	color: #333333;
+}
+.main-today, .main-step-unit {
+  font-family: PingFang-SC-Medium;
+	font-size: 30rpx;
+	color: #666666;
+  text-align: center;
+  z-index: 2;
+}
+
+.main-step {
+  margin-top: 49rpx;
+  font-family: STHeitiSC-Medium;
+	font-size: 80rpx;
+	letter-spacing: 0rpx;
+	color: #ffa00b;
+  z-index: 2;
+}
+
+/* donation */
+.step-donation {
+  width: 100%;
+  flex: 1;
+  box-sizing: border-box;
+  margin: 20rpx 0;
+  padding: 35rpx 60rpx;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  align-items: center;
+  font-family: PingFang-SC-Medium;
+}
+.donation-left {
+  text-align: center;
+	font-size: 30rpx;
+	color: #666666;
+}
+.donation-logo {
+  width: 150rpx;
+  height: 150rpx;
+  margin: 50rpx 0;
+}
+.donation-text{
+	font-size: 30rpx;
+	letter-spacing: 0rpx;
+	color: #333333;
+}
+.donation-btn{
+  width: 100%;
+  height: 70rpx;
+	background-color: #f3513e;
+	border-radius: 6rpx;
+	font-size: 30rpx;
+	line-height: 70rpx;
+	color: #ffffff;
+  text-align: center;
+  margin-top: 20rpx;
+}
+
+/* rule */
+.step-rule {
+  width: 100%;
+  height: 226rpx;
+  padding:32rpx 14rpx 14rpx 32rpx;
+  background-color: #fff;
+  box-sizing: border-box;
+  font-family: PingFang-SC-Regular;
+	font-size: 30rpx;
+	line-height: 60rpx;
+	letter-spacing: 0rpx;
+	color: #333333;
+}

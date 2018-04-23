@@ -1,0 +1,56 @@
+<view class="personal-container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" class="login" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <view wx:else class="userinfo-info">
+      <view class="userinfo-avatar"><image src="{{userInfo.avatarUrl}}" style="width:100%;height:100%"></image></view>
+      <text class="userinfo-nickname">{{userInfo.nickName ||'称呼'}}</text>
+    </view>
+    <view class="user-donation">
+      <text class="donation">捐出善款：{{personalInfo.donation}}元</text>
+    </view>
+    <view class="userinfo-bg"><image src="/images/personal/bg@2x.png" style="width:100%;height:100%"></image></view>
+  </view>
+  <view class="nav">
+  <!-- 跳转捐赠记录 -->
+    <navigator class="nav-item" url="/pages/personal/record/record">
+      <view class="nav-left">
+        <image class="nav-icon" src="/images/personal/record.png" mode="aspectFit"></image> 
+        <text class="nav-text">捐赠记录</text>
+      </view>
+      <view class="nav-right">
+        <image class="nav-arrow" src="/images/personal/arrow.png" mode="aspectFit"></image>
+      </view>
+    </navigator>
+    <!-- 跳转捐赠证书 -->
+    <navigator class="nav-item" url="/pages/personal/certificate/certificate">
+      <view class="nav-left">
+        <image class="nav-icon" src="/images/personal/certificate.png" mode="aspectFit"></image> 
+        <text class="nav-text">捐赠证书</text>
+      </view>
+      <view class="nav-right">
+        <image class="nav-arrow" src="/images/personal/arrow.png" mode="aspectFit"></image>
+      </view>
+    </navigator>
+    <!-- 跳转服务条款 -->
+    <navigator class="nav-item" url="/pages/personal/clause/clause">
+      <view class="nav-left">
+        <image class="nav-icon" src="/images/personal/clause.png" mode="aspectFit"></image> 
+        <text class="nav-text">服务条款</text>
+      </view>
+      <view class="nav-right">
+        <image class="nav-arrow" src="/images/personal/arrow.png" mode="aspectFit"></image>
+      </view>
+    </navigator>
+    <!-- 跳转关于青联 -->
+    <navigator class="nav-item" url="/pages/personal/about/about">
+      <view class="nav-left">
+        <image class="nav-icon" src="/images/personal/about.png" mode="aspectFit"></image> 
+        <text class="nav-text">关于青联</text>
+      </view>
+      <view class="nav-right">
+        <image class="nav-arrow" src="/images/personal/arrow.png" mode="aspectFit"></image>
+      </view>
+    </navigator>
+  </view>
+  
+</view>

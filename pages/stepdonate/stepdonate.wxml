@@ -1,0 +1,23 @@
+<!--pages/stepdonate/stepdonate.wxml-->
+<view class="step-container">
+  <view class="step-main">
+    <view class="main-date">
+      <view class="main-arrow-left" bindtap='datepre'><image src="/images/step/arrow-left.png" style='width:100%;height:100%'></image></view>
+      <view class="main-date-text"><text>{{date}}</text></view>
+      <view class="main-arrow-right" bindtap='datenext'><image src="/images/step/arrow-right.png" style='width:100%;height:100%'></image></view>
+    </view>
+    <view class="main-today"><text>-  今日步数  -</text></view>
+    <view class="main-step"><text>{{step}}</text><text class="main-step-unit">步</text></view>
+    <view class="main-bg"><image src="/images/step/step-bg.png" style='width:100%;height:100%'></image></view>
+  </view>
+  <view class="step-donation">
+    <view class="donation-left"><text>-  企业可兑换的公益基金还剩{{company.left}}元  -</text></view>
+    <view class="donation-logo"><image src="{{company.logo}}" style='width:100%;height:100%'></image></view>
+    <view class="donation-text"><text>{{company.name}}将为您出资捐赠</text></view>
+    <view class="donation-btn" bindtap='donation'>立即捐步</view>
+  </view>
+  <view class="step-rule">
+    <view><text>捐步规则：</text></view>
+    <view><text>1万步可以兑现1元，2万步兑现3元，3万步兑现10元，4万步兑现20元，5万步兑现30元。</text></view>
+  </view>
+</view>

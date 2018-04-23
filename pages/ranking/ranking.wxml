@@ -1,0 +1,32 @@
+<!--pages/ranking/ranking.wxml-->
+<view class="ranking-container">
+  <!-- 排名切换 -->
+  <view class="ranking-switch">
+    <view class="switch-item" bindtap='switch' data-switch-type="day">
+      <text class= "switch-item-text {{active === 'day' ?'active' : ''}}">每日排名</text>
+    </view>
+    <view class="switch-item" bindtap='switch' data-switch-type="year">
+      <text class= "switch-item-text {{active === 'year' ?'active' : ''}}">金额总榜</text>
+    </view>
+    <view class="switch-item" bindtap='switch' data-switch-type="count">
+      <text class= "switch-item-text {{active === 'count' ?'active' : ''}}">次数总榜</text>
+    </view>
+  </view>
+  <!-- 滚动排名内容 -->
+  <scroll-view scroll-y bindscrolltolower="lower" style="height:{{scrollHeight}}px;" class="ranking-scroll">
+    <view wx:for="{{list}}" class="list-item" wx:key="index">
+      <view class="item-icon" wx:if="{{index < 3}}">
+         <image src="{{'/images/ranking/rank'+ (index+1) +'.png'}}" style='width:100%;height:100%;border-radius:50%'></image> 
+      </view>
+      <view class="item-avatar">
+          <image src="{{item.headUrl}}" style='width:100%;height:100%'></image>
+        </view>
+        <text class="item-name">{{item.nickname}}</text>
+        <text wx:if="{{active === 'count'}}" class="item-value"><text style="color:#ee4949">{{item.amount}}</text>次</text>
+        <text wx:else class="item-value"><text style="color:#ee4949">{{item.amount}}</text>元</text>
+    </view>
+    <view class="nomore" hidden="{{hidden}}">
+      <text>没有更多</text>   
+    </view>
+  </scroll-view>
+</view>

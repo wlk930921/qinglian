@@ -1,0 +1,137 @@
+/* pages/donation/donation.wxss */
+page {
+  width: 100%;
+  height: 100%;
+  background-color: #efeff4;
+}
+
+.donation-container {
+  position: relative; 
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  font-family: PingFang-SC-Medium;
+}
+/* banner */
+.donation-banner {
+  width: 100%;
+  height: 352rpx;
+  background-color: #efeff4;
+  margin-bottom: 20rpx;
+}
+/* 众筹 */
+.donation-raise {
+  background-color: #fff;
+  margin-bottom: 20rpx;
+  padding-bottom: 36rpx;
+}
+.raise-wrapper {
+  width: 100%;
+  padding: 22rpx 20rpx; 
+  box-sizing: border-box;
+}
+.raise-title{
+  font-size: 29rpx;
+	line-height: 38rpx;
+	color: #333333;
+  padding:0 0 29rpx 12rpx;
+  border-bottom: 1rpx solid #e2e2e2;
+}
+.money-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 628rpx;
+  margin: 22rpx auto;
+}
+.money-item {
+  width: 200rpx;
+	height: 70rpx;
+	border-radius: 6rpx;
+	border: 1rpx solid #e33c24;
+	font-family: STHeitiSC-Medium;
+	font-size: 40rpx;
+	line-height: 70rpx;
+	color: #f3513e;
+  text-align: center;
+  margin-bottom: 12rpx;
+}
+.money-item.active {
+  background-color: #e33c24;
+  color: #fff;
+}
+.money-item.active .money-unit{
+  color: #fff;
+}
+.money-unit {
+  font-family: PingFang-SC-Medium;
+	font-size: 24rpx;
+	line-height: 38rpx;
+	color: #888888;
+  margin-left: 5rpx;
+}
+.message-wrapper{
+  position: relative;
+  width: 628rpx;
+	height: 164rpx;
+  box-sizing: border-box;
+  padding: 18rpx 20rpx;
+	border-radius: 6rpx;
+	border: 1rpx solid #d4d4d9;
+  margin: 0 auto;
+  font-family: PingFang-SC-Medium;
+	font-size: 30rpx;
+	letter-spacing: 1px;
+	color: #333333;
+}
+
+.message-input{
+  width:100%;
+  height: 100%;
+}
+.message-num{
+  position: absolute;
+  right: 20rpx;
+  bottom: 14rpx;
+  font-size: 18rpx;
+	color: #999999;
+}
+/* 拍卖 */
+.raise-btn {
+  text-align: center;
+  width: 628rpx;
+	height: 70rpx;
+  margin: 24rpx auto 0;
+  line-height: 70rpx;
+	background-color: #f3513e;
+	border-radius: 6rpx;
+  color: #fff;
+  font-family: PingFang-SC-Medium;
+	font-size: 30rpx;
+	letter-spacing: 1rpx;
+}
+
+.donation-auction {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 25rpx 32rpx;
+  background-color: #fff;
+  margin-bottom: 20rpx;
+}
+.auction-title{
+  font-size: 30rpx;
+	line-height: 38rpx;
+	color: #333333;
+  margin-bottom: 60rpx;
+}
+.auction-img{
+  width: 100%;
+  height: 360rpx;
+}
+.auction-text{
+  font-size: 26rpx;
+	line-height: 48rpx;
+	color: #333333;
+}

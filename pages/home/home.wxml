@@ -1,0 +1,78 @@
+<!--pages/home/home.wxml-->
+<view class="home-container">
+  <view class="home-banner">
+    <image src="/images/donation/banner.png" style='width:100%;height:100%'></image>
+  </view>
+  <!-- 暖心行动 -->
+  <view class="home-heart">
+    <view class="heart-logo"><image src="/images/home/heart-activity.png" style='width:100%;height:100%'></image></view>
+    <view class="heart-people">
+      <view class="heart-icon"><image src="/images/home/heart.png" style='width:100%;height:100%'></image></view>
+      <view class="heart-people-text">当前已有 <text style="color:#f3513e">{{raisePeople || 0}}</text>人/次奉献爱心</view>
+    </view>
+    <view class="heart-des"><text>当前筹款 / 元</text></view>
+    <view class="heart-money"><text>{{raiseMoney || 0}}</text></view>
+    <view class="heart-btn-warpper">
+      <navigator class="heart-btn" open-type='navigateTo' url="/pages/personal/certificate/certificate">查看爱心证书</navigator>
+      <navigator class="heart-btn" open-type="switchTab" url="/pages/donation/donation">爱心捐赠</navigator>
+    </view>
+    <view class="heart-btn-warpper">
+      <navigator class="heart-btn" open-type='navigateTo' url="/pages/stepdonate/stepdonate">爱心捐步</navigator>
+      <view class="heart-btn">抽奖</view>
+    </view>
+  </view>
+  <!-- 项目详情 -->
+  <view class="box-wrapper">
+    <view class="box-title"><text>项目详情</text></view>
+    <view class="box-content">
+      <text>{{eventContent}}</text>
+    </view>
+  </view>
+  <!-- 捐款留言 -->
+  <view class="box-wrapper">
+    <view class="box-title"><text>捐款留言</text></view>
+    <view wx:for="{{message}}" class="home-message-item" wx:key="index">
+      <view class="message-avatar">
+        <image src="{{item.headUrl}}" style='width:100%;height:100%'></image>
+      </view>
+      <view class="message-content">
+        <view class="message-name"><text>{{item.nickname}}</text></view>
+        <view class="message-text"><text>用户留言:{{item.content}}</text></view>
+      </view>
+      <view class="message-donation">
+        <text>捐助<text style="color:#eb6353">{{item.donation || 0}}</text>元</text>
+      </view>
+    </view>
+  </view>
+  <!-- 活动详情 -->
+  <view class="box-wrapper">
+    <view class="box-title"><text>活动详情</text></view>
+    <view class="home-activity-img">
+      <image src="/images/donation/example.png" style='width:100%;height:100%'></image>
+    </view>
+    <view class="home-activity-text"><text>（项目反馈、活动报道，以新闻的形式展现）</text></view>
+  </view>
+  <!-- 账户 -->
+  <view class="box-wrapper">
+    <view class="box-title"><text style="color:#f3513e">接受捐款唯一账户</text></view>
+    <view class="home-account">
+      <view class="account-icon">
+        <image src="/images/home/icbc.png" style='width:100%;height:100%'></image>
+      </view>
+      <view class="account-info">
+        <view><text>开户行：工行武林支行</text></view>
+        <view><text>户名：浙江省青少年发展基金会</text></view>
+      </view>
+    </view>
+    <view class="account-account"><text>账号：</text><text class="account-num">1202 0212 0901 4404 811</text></view>
+  </view>
+  <!-- 捐赠说明 -->
+  <view class="box-wrapper">
+    <view class="box-title"><text>捐赠说明</text></view>
+    <view class="box-content">
+      <text> 我们会为捐赠人开具统一的捐赠票据，但出于人力、邮寄成本等因素的考虑，目前本平台的捐赠默认不提供捐赠票据。若捐方需要票据，请在下月底前与我会联系，确认开票信息。索取发票需提供以下信息：捐赠时间、捐赠人、票据抬头，收件人及联系电话、邮寄地址和邮编。</text>
+    </view>
+  </view>
+  <!-- Copyright -->
+  <view class="copyright"><text>©内蒙古青少年发展基金会</text></view>
+</view>

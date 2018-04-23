@@ -1,0 +1,128 @@
+/* pages/personal/personal.wxss */
+page {
+  width: 100%;
+  background-color: #efeff4;
+  display: flex;
+  flex-direction: column; 
+}
+.personal-container{
+  position: relative; 
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.userinfo {
+  position: relative;
+  display: flex;
+   flex-direction: column; 
+  /* justify-content: center;  */
+  align-items: center; 
+  width: 100%;
+  height: 510rpx;
+  background-color: #e97a6a;
+  box-shadow: inset 0rpx -1rpx 0rpx 0rpx #cccccc;
+}
+.userinfo-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 0;
+}
+/* 登陆 */
+.login {
+  width: 170rpx;
+  height: 170rpx;
+  box-sizing: border-box;
+  padding: 20rpx 0;
+  margin-top: 87rpx;
+  border: 10rpx solid rgba(160, 18, 18, 0.1);
+  border-radius: 50%;
+  z-index: 2;
+  background-color: #fff;
+  font-size: 24rpx;
+  line-height: 130rpx;
+  color: #e97a6a;
+}
+/* 头像 */
+.userinfo-info {
+   display: flex;
+   flex-direction: column; 
+  /* justify-content: center;  */
+  align-items: center; 
+  z-index: 9;
+}
+.userinfo-avatar {
+  width: 170rpx;
+  height: 170rpx;
+  margin-top: 87rpx;
+  border: 10rpx solid rgba(160, 18, 18, 0.1);
+  border-radius: 50%;
+  z-index: 99;
+  background-color: #efeff4;
+  overflow: hidden;
+}
+
+.userinfo-nickname {
+  color: #fefefe;
+  font-size: 35rpx;
+  z-index: 2;
+  margin: 12rpx 0;
+}
+
+.user-donation {
+  z-index: 2;
+  margin-top: 43rpx;
+}
+
+.donation {
+  font-size: 28rpx;
+	color: #ecccc7;
+  }
+
+.nav {
+  margin-top: 24rpx; 
+  padding: 0 20rpx;
+  background-color: #ffffff;
+	border-top: 1rpx solid #cccccc;
+  border-bottom: 1rpx solid #cccccc;
+  width: 100%;
+  box-sizing: border-box;
+ 
+}
+.nav-item {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  height: 80rpx;
+  line-height: 80rpx;
+  border-bottom: 1rpx solid #cccccc;
+  box-sizing: border-box
+}
+.nav-item:nth-last-child(1){
+  border: none;
+}
+.nav-left {
+  flex: 1;
+}
+.nav-icon {
+  display: inline-block;
+  width: 30rpx;
+  height: 30rpx;
+  margin-top: 25rpx;
+}
+.nav-text {
+  color: #333333;
+  font-size: 30rpx;
+  margin-left: 20rpx;
+}
+.nac-right {
+  width: 20rpx;
+  flex:  0 0 20rpx;
+}
+.nav-arrow {
+  width:19rpx;
+  height:34rpx;
+}

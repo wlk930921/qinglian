@@ -1,0 +1,219 @@
+/* pages/home/home.wxss */
+page {
+  width: 100%;
+  height: 100%;
+  background-color: #efeff4;
+}
+.home-container {
+  position: relative; 
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  font-family: PingFang-SC-Medium;
+}
+
+.home-banner {
+  width: 100%;
+  height: 352rpx;
+  background-color: #efeff4;
+  margin-bottom: 20rpx;
+}
+/* common */
+.box-wrapper{
+  width: 100%;
+  padding: 22rpx 20rpx; 
+  box-sizing: border-box;
+  background-color: #fff;
+  margin-bottom: 20rpx;
+}
+.box-title {
+  font-size: 29rpx;
+	line-height: 38rpx;
+	color: #333333;
+  padding:0 0 29rpx 12rpx;
+  border-bottom: 1rpx solid #e2e2e2; 
+}
+/* home */
+.home-heart{
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 20rpx;
+  background-color: #fff;
+  margin-bottom: 20rpx;
+  text-align: center;
+}
+.heart-logo {
+  margin:  9rpx auto 24rpx;
+  width: 384rpx;
+	height: 58rpx;
+}
+.heart-people {
+  /* width: 466px; */
+  display: inline-block;
+	height: 54rpx;
+  padding: 10rpx 46rpx 9rpx 21rpx;
+  box-sizing: border-box;
+	border-radius: 27rpx;
+	border: 1rpx solid rgba(201, 201, 201, 0.6);
+}
+.heart-icon {
+  display: inline-block;
+  vertical-align: top;
+  width: 37rpx;
+	height: 35rpx;
+}
+.heart-icon image {
+  display: block;
+}
+.heart-people-text {
+  font-family: PingFang-SC-Regular;
+  display: inline-block;
+  height: 35rpx;
+  vertical-align: top;
+  padding-left: 19rpx;
+	font-size: 26rpx;
+	line-height: 35rpx;
+}
+.heart-des {
+  margin: 0 26rpx;
+  text-align: center;
+  font-family: PingFang-SC-Regular;
+	font-size: 26rpx;
+	color: #353535;
+}
+.heart-money {
+  margin: 27rpx 0;
+  font-family: STHeitiSC-Medium;
+	font-size: 56rpx;
+	letter-spacing: 2rpx;
+	color: #f3513e;
+  text-align: center;
+}
+.heart-btn-warpper {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 20rpx 56rpx;
+  display: flex;
+  border-bottom:1rpx solid #e2e2e2;
+  justify-content: space-between;
+}
+.heart-btn-warpper:nth-last-child(1) {
+  border: none;
+}
+.heart-btn {
+  width: 280rpx;
+	height: 70rpx;
+	background-color: #f3513e;
+	border-radius: 6rpx;
+  font-family: PingFang-SC-Medium;
+	font-size: 26rpx;
+	line-height: 70rpx;
+	letter-spacing: 1rpx;
+	color: #ffffff;
+}
+
+/* detail & instructions*/
+.box-content{
+  padding: 34rpx 18rpx 20rpx;
+	font-size: 26rpx;
+	line-height: 48rpx;
+	letter-spacing: 0rpx;
+	color: #888888;
+  text-indent: 52rpx;
+}
+/* message */
+.home-message-item {
+  display: flex;
+  justify-content: space-between;
+  box-sizing: border-box;
+  width: 100%;
+  padding:22rpx 60rpx 22rpx 18rpx;
+  border-bottom: 1rpx solid #e2e2e2; 
+}
+.home-message-item:nth-last-child(1){
+  border: none;
+  padding-bottom: 0;
+}
+.message-avatar {
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.message-content {
+  flex: 1;
+  padding-left: 14rpx;
+  text-align: left;
+}
+.message-name {
+  font-size: 30rpx;
+	color: #333333;
+}
+.message-text {
+  font-size: 26rpx;
+  color: #999999;
+}
+.message-donation{
+  padding-top: 30rpx;
+  font-size: 28rpx;
+	/* line-height: 28px; */
+	letter-spacing: 0rpx;
+	color: #666666;
+}
+/* activity */
+.home-activity-img{
+  width: 100%;
+  padding: 0 15rpx;
+  height: 360rpx;
+  box-sizing: border-box;
+  margin: 30rpx 0 23rpx;
+}
+.home-activity-text{
+  font-size: 26rpx;
+	letter-spacing: 0rpx;
+	color: #333333;
+}
+/* account */
+.home-account{
+  display: flex;
+  width: 100%;
+  margin-top: 38rpx;
+}
+.account-icon{
+  flex: 0 0 103rpx;
+  width: 103rpx;
+  height: 103rpx;
+  margin: 0 20rpx;
+}
+.account-info{
+  flex: 1;
+  font-size: 27rpx;
+	line-height: 48rpx;
+	letter-spacing: 0px;
+	color: #333333;
+}
+.account-account{
+  font-size: 27rpx;
+	color: #333333;
+  height: 48rpx;
+  line-height: 48rpx;
+  padding: 20rpx 0 20rpx 58rpx;
+}
+.account-num {
+  font-family: STHeitiSC-Medium;
+	font-size: 35rpx;
+	letter-spacing: 1rpx;
+	color: #333333;
+  line-height: 35rpx;
+}
+/* copyright */
+.copyright{
+  width: 100%;
+  font-size: 24rpx;
+	line-height: 48rpx;
+	letter-spacing: 0rpx;
+	color: #888888;
+  margin-bottom: 20rpx;
+  text-align: center;
+}

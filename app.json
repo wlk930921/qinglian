@@ -1,0 +1,52 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/donation/donation",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/ranking/ranking",
+    "pages/personal/personal",
+    "pages/personal/about/about",
+    "pages/personal/clause/clause",
+    "pages/personal/certificate/certificate",
+    "pages/personal/record/record",
+    "pages/stepdonate/stepdonate"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "backgroundColor": "#ffffff",
+    "selectedColor": "#f3513e",
+    "navigationBarTextStyle": "#7f8389",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "images/icon/home@2x.png",
+        "selectedIconPath": "images/icon/home-active@2x.png"
+      },
+      {
+        "pagePath": "pages/donation/donation",
+        "text": "捐赠",
+        "iconPath": "images/icon/donation@2x.png",
+        "selectedIconPath": "images/icon/donation-active@2x.png"
+      },
+      {
+        "pagePath": "pages/ranking/ranking",
+        "text": "捐赠排名",
+        "iconPath": "images/icon/rank@2x.png",
+        "selectedIconPath": "images/icon/rank-active@2x.png"
+      },
+      {
+        "pagePath": "pages/personal/personal",
+        "text": "个人中心",
+        "iconPath": "images/icon/personal@2x.png",
+        "selectedIconPath": "images/icon/personal-active@2x.png"
+      }
+    ]
+  }
+}

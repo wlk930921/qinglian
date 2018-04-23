@@ -1,0 +1,17 @@
+<view class="about-container">
+  <view class="about-title-big">
+    <text>中华全国青年联合会</text>
+  </view>
+  <view class="about-title-small">
+    <text >1、小标题</text>
+  </view>
+  <view class="about-text">
+    <text>中华全国青年联合会简称全国青联，成立于1949年5月4日。全国青联是中国共产党领导下的我国基本人民团体之一，是以中国共产主义青年团为核心力量的各青年团体的联合组织，是我国各族各界青年广泛的爱国统一战线组织。</text>
+  </view>
+  <view class="about-text">
+      <text>全国青联的最高领导机关是全国委员会，每届任期5年。全国委员会闭会期间，由常务委员会主持会务。全国青联下设秘书处，负责日常事务。</text>
+  </view>
+  <view class="about-text">
+    <text>全国青联成立至2015年7月已历经十二届，其沿革由代表大会制改为委员会制。现任主席由贺军科担任。</text>
+  </view>
+</view>
